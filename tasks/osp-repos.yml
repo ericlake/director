@@ -29,4 +29,3 @@
     gpgcheck: no
     enabled: "{{ openstack_tools_rpms | default('yes') }}"
   when: reposerver is defined
-

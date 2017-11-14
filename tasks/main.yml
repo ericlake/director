@@ -48,7 +48,7 @@
       name: "{{ stack_group }}"
       state: present
 
-  - name: Create the user stack 
+  - name: Create the user stack
     user:
       name: "{{ stack_user }}"
       group: "{{ stack_group }}"
@@ -76,7 +76,7 @@
       mode: "{{ sudoer_perm }}"
       group: "{{ stack_group }}"
       owner: "{{ stack_user }}"
-    
+
     #- name: Copy over the undercloud file
     #template:
     #src: undercloud.conf.j2
@@ -104,5 +104,3 @@
 
   - name: Verify neutron 2
     shell: neutron subnet-list
-
-
