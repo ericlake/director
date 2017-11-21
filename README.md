@@ -5,10 +5,10 @@ Install all the requirements and undercloud.
 Requirements
 ------------
 
+None
 
 Role Variables
 --------------
----
 
 This is a quick group_vars that can be used for prod/dev. A more in depth templated undercloud.conf file can be found in templates/undercloud.conf.j2
 

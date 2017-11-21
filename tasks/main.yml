@@ -14,8 +14,8 @@
   lineinfile:
     dest: /etc/hosts
     state: present
-    regexp: '^{{ public_ip }}'
-    line: '{{ public_ip }} {{ ansible_fqdn }} {{ ansible_hostname }}'
+    regexp: '^{{ public_vip }}'
+    line: '{{ public_vip }} {{ ansible_fqdn }} {{ ansible_hostname }}'
 
 - name:  turn off requiretty for sudo
   lineinfile:
